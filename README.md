@@ -1,46 +1,182 @@
-# Getting Started with Create React App
+# Jaelen Wright - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and TypeScript, showcasing professional experience, technical skills, and projects.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Clean, professional design with smooth animations
+- **Component-Based**: Reusable components for easy maintenance
+- **TypeScript**: Full type safety and better development experience
+- **Routing**: Client-side routing with React Router
+- **Performance**: Optimized for fast loading and smooth interactions
 
-### `npm start`
+## Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Home**: Hero section with contact information and call-to-action
+- **Experience**: Work history and education details
+- **Skills**: Technical skills organized by category
+- **Projects**: Live and personal projects with detailed descriptions
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **Routing**: React Router DOM
+- **Styling**: Tailwind CSS with custom components
+- **Build Tool**: Create React App
+- **Deployment**: Vercel-ready
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (v16 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd portfolio-website
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Start the development server:
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build for Production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+## Deployment to Vercel
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is optimized for deployment on Vercel. Follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Push to GitHub**: Ensure your code is pushed to a GitHub repository.
+
+2. **Connect to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Sign in with your GitHub account
+   - Click "New Project"
+   - Import your portfolio repository
+
+3. **Configure Build Settings**:
+   - **Framework Preset**: Create React App
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `build`
+   - **Install Command**: `npm install`
+
+4. **Environment Variables**: No environment variables are required for this project.
+
+5. **Deploy**: Click "Deploy" and Vercel will automatically build and deploy your site.
+
+6. **Custom Domain** (Optional): Add a custom domain in the Vercel dashboard.
+
+## Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Navigation.tsx  # Navigation bar
+│   ├── Footer.tsx      # Footer component
+│   ├── ProjectCard.tsx # Project display card
+│   ├── ExperienceCard.tsx # Experience display card
+│   └── SkillCard.tsx   # Skills display card
+├── pages/              # Page components
+│   ├── Home.tsx        # Home page
+│   ├── Experience.tsx  # Experience page
+│   ├── Skills.tsx      # Skills page
+│   └── Projects.tsx    # Projects page
+├── types/              # TypeScript interfaces
+│   └── index.ts        # Type definitions
+├── data/               # Static data
+│   └── portfolioData.ts # Resume/project data
+└── App.tsx             # Main app component
+```
+
+## Customization
+
+### Adding New Projects
+
+Edit `src/data/portfolioData.ts` to add new projects:
+
+```typescript
+export const liveProjects: Project[] = [
+  // ... existing projects
+  {
+    id: 'new-project',
+    title: 'New Project',
+    description: 'Project description here',
+    stack: ['React', 'Node.js'],
+    link: 'https://project-url.com',
+    type: 'live'
+  }
+];
+```
+
+### Updating Skills
+
+Modify the skills array in the same file:
+
+```typescript
+export const skills: Skill[] = [
+  {
+    category: 'New Category',
+    items: ['Skill 1', 'Skill 2', 'Skill 3']
+  }
+];
+```
+
+### Styling
+
+The project uses Tailwind CSS. Custom styles can be added in:
+- `src/index.css` for global styles
+- Component files for component-specific styles
+- `tailwind.config.js` for theme customization
+
+## Performance Features
+
+- **Lazy Loading**: Components are loaded as needed
+- **Optimized Images**: SVG icons for scalability
+- **Minimal Dependencies**: Only essential packages included
+- **CSS Optimization**: Tailwind CSS purging for production
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+- **Email**: jaelen.n.wright@gmail.com
+- **LinkedIn**: [linkedin.com/in/jaelenwright](https://linkedin.com/in/jaelenwright)
+- **GitHub**: [github.com/JaeWright](https://github.com/JaeWright)
+
+---
+
+Built with ❤️ using React and TypeScript
