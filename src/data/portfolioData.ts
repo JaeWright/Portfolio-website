@@ -83,7 +83,7 @@ export const liveProjects: Project[] = [
     title: 'OX Courier System',
     description: 'A comprehensive courier management platform built for efficient delivery tracking, route optimization, and customer management. Features real-time tracking, automated notifications, and comprehensive reporting.',
     stack: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
-    link: 'https://oxcourier.byllkreate.com',
+    link: 'https://oxpackages.com',
     type: 'live'
   },
   {
@@ -91,7 +91,7 @@ export const liveProjects: Project[] = [
     title: 'CaptureLand',
     description: 'An innovative real estate platform that combines property photography, virtual tours, and marketing tools. Helps real estate professionals showcase properties with high-quality media and interactive experiences.',
     stack: ['React', 'Next.js', 'TypeScript', 'Firebase', 'Stripe'],
-    link: 'https://captureland.byllkreate.com',
+    link: 'https://captureland.org',
     type: 'live'
   },
   {

@@ -26,3 +26,4 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
 };
 
 export default SkillCard;
+
