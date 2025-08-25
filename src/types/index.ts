@@ -31,3 +31,4 @@ export interface ContactInfo {
   linkedin: string;
   github: string;
 }
+
