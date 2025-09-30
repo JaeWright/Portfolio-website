@@ -63,10 +63,10 @@ const Home: React.FC = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="btn-primary">
+            <a href="/projects" className="btn-primary">
               View My Work
             </a>
-            <a href="#contact" className="btn-secondary">
+            <a href="/contact" className="btn-secondary">
               Get In Touch
             </a>
           </div>
